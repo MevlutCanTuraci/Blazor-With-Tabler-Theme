@@ -1,0 +1,10 @@
+<!-- PageHeader.razor -->
+<div class="page-header d-print-none">
+    @ChildContent
+</div>
+
+@code {
+    // ChildContent parametresi
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}
